@@ -13,8 +13,15 @@
     <asp:TextBox ID="txtDescricao" runat="server" TextMode="MultiLine"></asp:TextBox>
     <br />
     <br />
-    <asp:Button ID="btnSalvar" runat="server" Text="Salvar" OnClick="btnSalvar_Click" />
-    <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" OnClick="btnCancelar_Click" />
+    <asp:Button ID="btnSalvar" runat="server" Text="Salvar" />
+    <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" />
+    <br />
+            <br />
+            <h1>Categorias Ativas</h1> 
+    <asp:GridView ID="gvCategorias" runat="server"></asp:GridView>
+    <br />
+            <h1>Categorias Excluidas</h1> 
+    <asp:GridView ID="gvCategoriasExcluidas" runat="server"></asp:GridView>
             </ContentTemplate>
     </asp:UpdatePanel>
 </asp:Content>

@@ -9,6 +9,6 @@ namespace Aula2405_EF_MF.Views
 {
     public class BasePage : Page
     {
-        protected BaseDadosContainer contexto = new BaseDadosContainer();
+        //protected BaseDadosContainer contexto = new BaseDadosContainer();
     }
 }

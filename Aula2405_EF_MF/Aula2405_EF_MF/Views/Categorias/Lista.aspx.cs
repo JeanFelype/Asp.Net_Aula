@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Aula2405_EF_MF.Controllers;
 
 namespace Aula2405_EF_MF.Views.Categorias
 {
@@ -12,7 +13,13 @@ namespace Aula2405_EF_MF.Views.Categorias
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<Categoria> categorias = contexto.Categorias.ToList();
+            CategoriasController ctrl = new CategoriasController();
+            List<Categoria> lista = ctrl.Listar();
+            gvCategorias.DataSource = lista.OrderBy(c => c.Nome);
+            gvCategorias.DataBind();
+
+            gvCategoriasExcluidas.DataSource = ctrl.ListarInativo();
+            gvCategoriasExcluidas.DataBind();
         }
 
         protected void btnSalvar_Click(object sender, EventArgs e)
@@ -22,8 +29,9 @@ namespace Aula2405_EF_MF.Views.Categorias
                 Categoria C = new Categoria();
                 C.Nome = txtNome.Text;
                 C.Descricao = txtDescricao.Text;
-                contexto.Categorias.Add(C);
-                contexto.SaveChanges();
+                C.Ativo = true;
+                CategoriasController ctrl = new CategoriasController();
+                ctrl.Adicionar(C);
             }
         }
 
