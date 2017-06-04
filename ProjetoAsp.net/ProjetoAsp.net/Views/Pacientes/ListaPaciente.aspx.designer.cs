@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjetoAsp.net.Views.Consultas {
+namespace ProjetoAsp.net.Views.Pacientes {
     
     
-    public partial class ListaConsultas {
+    public partial class ListaPaciente {
         
         /// <summary>
         /// UpdatePanel1 control.
@@ -22,58 +22,40 @@ namespace ProjetoAsp.net.Views.Consultas {
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
-        /// lblNome control.
+        /// lblNomeP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNome;
+        protected global::System.Web.UI.WebControls.Label lblNomeP;
         
         /// <summary>
-        /// txtNome control.
+        /// txtNomeP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNome;
+        protected global::System.Web.UI.WebControls.TextBox txtNomeP;
         
         /// <summary>
-        /// lblPreco control.
+        /// lblDataNasc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPreco;
+        protected global::System.Web.UI.WebControls.Label lblDataNasc;
         
         /// <summary>
-        /// txtPreco control.
+        /// txtDataNasc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPreco;
-        
-        /// <summary>
-        /// lblData control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblData;
-        
-        /// <summary>
-        /// txtData control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtData;
+        protected global::System.Web.UI.WebControls.TextBox txtDataNasc;
         
         /// <summary>
         /// btnSalvar control.
@@ -94,22 +76,22 @@ namespace ProjetoAsp.net.Views.Consultas {
         protected global::System.Web.UI.WebControls.Button btnMostrar;
         
         /// <summary>
-        /// lblID control.
+        /// lblIDP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblID;
+        protected global::System.Web.UI.WebControls.Label lblIDP;
         
         /// <summary>
-        /// txtID control.
+        /// txtIDP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtID;
+        protected global::System.Web.UI.WebControls.TextBox txtIDP;
         
         /// <summary>
         /// btnBuscar control.
@@ -121,58 +103,40 @@ namespace ProjetoAsp.net.Views.Consultas {
         protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
-        /// lblNomeEncontrado control.
+        /// lblNomePEncontrado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNomeEncontrado;
+        protected global::System.Web.UI.WebControls.Label lblNomePEncontrado;
         
         /// <summary>
-        /// txtNomeEncontrado control.
+        /// txtNomePEncontrado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNomeEncontrado;
+        protected global::System.Web.UI.WebControls.TextBox txtNomePEncontrado;
         
         /// <summary>
-        /// lblPrecoEncontrado control.
+        /// lblDataNascEncontrado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrecoEncontrado;
+        protected global::System.Web.UI.WebControls.Label lblDataNascEncontrado;
         
         /// <summary>
-        /// txtPrecoEncontrado control.
+        /// txtDataNascEncontrado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPrecoEncontrado;
-        
-        /// <summary>
-        /// lblDataEncontrada control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDataEncontrada;
-        
-        /// <summary>
-        /// txtDataEncontrada control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDataEncontrada;
+        protected global::System.Web.UI.WebControls.TextBox txtDataNascEncontrado;
         
         /// <summary>
         /// btnExcluir control.

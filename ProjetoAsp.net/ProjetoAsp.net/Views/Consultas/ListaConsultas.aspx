@@ -27,6 +27,18 @@
             <br />
             <asp:Label ID="lblNomeEncontrado" runat="server" Text="Nome: "></asp:Label>
             <asp:TextBox ID="txtNomeEncontrado" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="lblPrecoEncontrado" runat="server" Text="Preço: "></asp:Label>
+            <asp:TextBox ID="txtPrecoEncontrado" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="lblDataEncontrada" runat="server" Text="Data: "></asp:Label>
+            <asp:TextBox ID="txtDataEncontrada" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="btnExcluir" runat="server" Text="Excluir" />
+            <asp:Button ID="btnEditar" runat="server" Text="Editar" />
         </ContentTemplate>
     </asp:UpdatePanel>
 </asp:Content>

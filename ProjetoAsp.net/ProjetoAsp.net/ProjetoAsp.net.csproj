@@ -145,7 +145,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Pacientes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
@@ -226,6 +225,8 @@
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\Consultas\ConsultasEncontradas.aspx" />
     <Content Include="Views\Consultas\ListaConsultas.aspx" />
+    <Content Include="Views\Pacientes\ListaPaciente.aspx" />
+    <Content Include="Views\Pacientes\PacientesEncontrados.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
@@ -258,6 +259,7 @@
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\ConsultaControllers.cs" />
+    <Compile Include="Controllers\PacienteControllers.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -324,6 +326,20 @@
     </Compile>
     <Compile Include="Views\Consultas\ListaConsultas.aspx.designer.cs">
       <DependentUpon>ListaConsultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pacientes\ListaPaciente.aspx.cs">
+      <DependentUpon>ListaPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Pacientes\ListaPaciente.aspx.designer.cs">
+      <DependentUpon>ListaPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pacientes\PacientesEncontrados.aspx.cs">
+      <DependentUpon>PacientesEncontrados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Pacientes\PacientesEncontrados.aspx.designer.cs">
+      <DependentUpon>PacientesEncontrados.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
