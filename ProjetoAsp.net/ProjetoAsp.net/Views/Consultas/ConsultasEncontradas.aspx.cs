@@ -18,7 +18,7 @@ namespace ProjetoAsp.net.Views.Consultas
             gvConsultaAtivas.DataSource = lista.OrderBy(c => c.Nome);
             gvConsultaAtivas.DataBind();
 
-            gvConsultaInativas.DataSource = lista.OrderBy(c => c.Nome);
+            gvConsultaInativas.DataSource = cc.ListarRealizadas();
             gvConsultaInativas.DataBind();
         }
     }

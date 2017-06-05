@@ -18,19 +18,19 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Nome" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="DataNascimento" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Ativo" Type="bit" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DataNascimento" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Ativo" Type="bit" Nullable="true" />
   </EntityType>
   <EntityType Name="Consultas">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Nome" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" Nullable="false" MaxLength="50" />
     <Property Name="Preco" Type="decimal" Nullable="false" />
-    <Property Name="Data" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Ativo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Data" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Ativo" Type="bit" Nullable="true" />
     <Property Name="PacienteId" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="PacienteConsulta">
@@ -64,7 +64,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Nome" Type="String" Nullable="false" MaxLength="50" />
           <Property Name="DataNascimento" Type="String" Nullable="false" MaxLength="10" />
-          <Property Name="Ativo" Type="Boolean" Nullable="false" />
+          <Property Name="Ativo" Type="Boolean" Nullable="true" />
           <NavigationProperty Name="Consulta" Relationship="BancoConsulta.PacienteConsulta" FromRole="Paciente" ToRole="Consulta" />
         </EntityType>
         <EntityType Name="Consulta">
@@ -75,7 +75,7 @@
           <Property Name="Nome" Type="String" Nullable="false" MaxLength="50" />
           <Property Name="Preco" Type="Decimal" Nullable="false" />
           <Property Name="Data" Type="String" Nullable="false" MaxLength="10" />
-          <Property Name="Ativo" Type="Boolean" Nullable="false" />
+          <Property Name="Ativo" Type="Boolean" Nullable="true" />
           <NavigationProperty Name="Paciente" Relationship="BancoConsulta.PacienteConsulta" FromRole="Consulta" ToRole="Paciente" />
           <Property Name="PacienteId" Type="Int32" Nullable="false" />
         </EntityType>

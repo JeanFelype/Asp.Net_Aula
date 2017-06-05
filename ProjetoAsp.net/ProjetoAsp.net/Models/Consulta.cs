@@ -18,7 +18,7 @@ namespace ProjetoAsp.net.Models
         public string Nome { get; set; }
         public decimal Preco { get; set; }
         public string Data { get; set; }
-        public bool Ativo { get; set; }
+        public Nullable<bool> Ativo { get; set; }
         public int PacienteId { get; set; }
     
         public virtual Paciente Paciente { get; set; }

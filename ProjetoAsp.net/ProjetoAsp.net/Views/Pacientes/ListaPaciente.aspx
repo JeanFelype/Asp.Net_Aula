@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ListaPaciente.aspx.cs" Inherits="ProjetoAsp.net.Views.Pacientes.ListaPaciente" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
+        <br />
+        <br />
         <asp:Label ID="lblNomeP" runat="server" Text="Nome: "></asp:Label>
         <asp:TextBox ID="txtNomeP" runat="server"></asp:TextBox>
         <br />
@@ -10,7 +12,7 @@
         <asp:TextBox ID="txtDataNasc" runat="server"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="btnSalvar" runat="server" Text="Salvar" />
+        <asp:Button ID="btnSalvar" runat="server" Text="Salvar" OnClick="btnSalvar_Click" />
         <asp:Button ID="btnMostrar" runat="server" Text="Mostar" />
         <br />
         <br />

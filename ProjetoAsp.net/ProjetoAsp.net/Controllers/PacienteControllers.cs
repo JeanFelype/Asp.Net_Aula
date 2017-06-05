@@ -14,7 +14,7 @@ namespace ProjetoAsp.net.Controllers
         {
             if (paciente != null)
             {
-                contexto.Consultas.Add(paciente);
+                contexto.Pacientes.Add(paciente);
                 contexto.SaveChanges();
             }
         }

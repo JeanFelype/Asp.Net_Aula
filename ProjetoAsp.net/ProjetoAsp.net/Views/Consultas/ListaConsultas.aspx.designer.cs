@@ -76,6 +76,24 @@ namespace ProjetoAsp.net.Views.Consultas {
         protected global::System.Web.UI.WebControls.TextBox txtData;
         
         /// <summary>
+        /// lblIDPac control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblIDPac;
+        
+        /// <summary>
+        /// ddlPacientes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlPacientes;
+        
+        /// <summary>
         /// btnSalvar control.
         /// </summary>
         /// <remarks>
