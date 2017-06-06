@@ -27,5 +27,43 @@ namespace ProjetoAsp.net.Views.Pacientes
                 pc.Adicionar(P);
             }
         }
+
+        protected void btnMostrar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PacientesEncontrados.aspx");
+        }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            int idPaciente = int.Parse(txtIDP.Text);
+            PacienteControllers pc = new PacienteControllers();
+            Paciente P = pc.BuscarPaciente(idPaciente);
+
+            if (P != null)
+            {
+                txtNomePEncontrado.Text = P.Nome;
+                txtDataNascEncontrado.Text = P.DataNascimento;
+            }
+        }
+
+        protected void btnExcluir_Click(object sender, EventArgs e)
+        {
+            int idPaciente = int.Parse(txtIDP.Text);
+            PacienteControllers pc = new PacienteControllers();
+            Paciente P = pc.BuscarPaciente(idPaciente);
+            P.Ativo = false;
+            pc.Excluir(P);
+        }
+
+        protected void btnEditar_Click(object sender, EventArgs e)
+        {
+            int idPaciente = int.Parse(txtIDP.Text);
+            PacienteControllers pc = new PacienteControllers();
+            Paciente P = pc.BuscarPaciente(idPaciente);
+            P.Ativo = true;
+            P.Nome = txtNomePEncontrado.Text;
+            P.DataNascimento = txtDataNascEncontrado.Text;
+            pc.Editar(P);
+        }
     }
 }

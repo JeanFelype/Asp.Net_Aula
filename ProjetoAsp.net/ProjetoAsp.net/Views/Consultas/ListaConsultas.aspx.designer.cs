@@ -193,6 +193,24 @@ namespace ProjetoAsp.net.Views.Consultas {
         protected global::System.Web.UI.WebControls.TextBox txtDataEncontrada;
         
         /// <summary>
+        /// lblIdPacEncontrado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblIdPacEncontrado;
+        
+        /// <summary>
+        /// ddlIdPacEncontrado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlIdPacEncontrado;
+        
+        /// <summary>
         /// btnExcluir control.
         /// </summary>
         /// <remarks>

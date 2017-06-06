@@ -20,6 +20,11 @@ namespace ProjetoAsp.net.Views.Consultas
                 PacienteControllers pc = new PacienteControllers();
                 ddlPacientes.DataSource = pc.ListarFuturas();
                 ddlPacientes.DataBind();
+            }else
+            {
+                PacienteControllers pc = new PacienteControllers();
+                ddlIdPacEncontrado.DataSource = pc.ListarFuturas();
+                ddlIdPacEncontrado.DataBind();
             }
         }
 
@@ -54,15 +59,30 @@ namespace ProjetoAsp.net.Views.Consultas
                 txtNomeEncontrado.Text = C.Nome;
                 txtPrecoEncontrado.Text = C.Preco.ToString();
                 txtDataEncontrada.Text = C.Data;
-                ddlPacientes.SelectedValue = C.Id.ToString();
+                ddlIdPacEncontrado.SelectedValue = C.Id.ToString();
             }
         }
 
         protected void btnExcluir_Click(object sender, EventArgs e)
         {
-            Consulta C = new Consulta();
+            int idConsulta = int.Parse(txtID.Text);
             ConsultaControllers cc = new ConsultaControllers();
+            Consulta C = cc.BuscarConsulta(idConsulta);
+            C.Ativo = false;
             cc.Excluir(C);
+        }
+
+        protected void btnEditar_Click(object sender, EventArgs e)
+        {
+            int idConsulta = int.Parse(txtID.Text);
+            ConsultaControllers cc = new ConsultaControllers();
+            Consulta C = cc.BuscarConsulta(idConsulta);
+            C.Nome = txtNomeEncontrado.Text;
+            C.Preco = decimal.Parse(txtPrecoEncontrado.Text);
+            C.Data = txtDataEncontrada.Text;
+            C.PacienteId = int.Parse(ddlPacientes.SelectedValue);
+            C.Ativo = true;
+            cc.Editar(C);
         }
     }
 }
