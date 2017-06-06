@@ -7,6 +7,8 @@
         <asp:Button ID="btnConsulta" runat="server" Text="Consulta" OnClick="btnConsulta_Click" />
         <br />
         <br />
+        <h1>Cadastrar Paciente</h1>
+        <br />
         <asp:Label ID="lblNomeP" runat="server" Text="Nome: "></asp:Label>
         <asp:TextBox ID="txtNomeP" runat="server"></asp:TextBox>
         <br />
@@ -18,6 +20,8 @@
         <asp:Button ID="btnSalvar" runat="server" Text="Salvar" OnClick="btnSalvar_Click" />
         <asp:Button ID="btnMostrar" runat="server" Text="Mostar" OnClick="btnMostrar_Click" />
         <br />
+        <br />
+        <h1>Buscar Paciente</h1>
         <br />
         <asp:Label ID="lblIDP" runat="server" Text="ID: "></asp:Label>
         <asp:TextBox ID="txtIDP" runat="server"></asp:TextBox>
