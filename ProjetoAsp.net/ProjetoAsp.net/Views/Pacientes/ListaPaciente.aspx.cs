@@ -65,5 +65,10 @@ namespace ProjetoAsp.net.Views.Pacientes
             P.DataNascimento = txtDataNascEncontrado.Text;
             pc.Editar(P);
         }
+
+        protected void btnConsulta_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Views/Consultas/ListaConsultas.aspx");
+        }
     }
 }

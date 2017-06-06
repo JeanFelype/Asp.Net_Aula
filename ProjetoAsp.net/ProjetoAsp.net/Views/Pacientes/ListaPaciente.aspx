@@ -4,6 +4,9 @@
     <ContentTemplate>
         <br />
         <br />
+        <asp:Button ID="btnConsulta" runat="server" Text="Consulta" OnClick="btnConsulta_Click" />
+        <br />
+        <br />
         <asp:Label ID="lblNomeP" runat="server" Text="Nome: "></asp:Label>
         <asp:TextBox ID="txtNomeP" runat="server"></asp:TextBox>
         <br />

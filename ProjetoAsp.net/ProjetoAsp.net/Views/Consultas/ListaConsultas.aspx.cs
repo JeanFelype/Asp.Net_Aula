@@ -59,7 +59,14 @@ namespace ProjetoAsp.net.Views.Consultas
                 txtNomeEncontrado.Text = C.Nome;
                 txtPrecoEncontrado.Text = C.Preco.ToString();
                 txtDataEncontrada.Text = C.Data;
-                ddlIdPacEncontrado.SelectedValue = C.Id.ToString();
+                try
+                {
+                    ddlIdPacEncontrado.SelectedValue = C.Id.ToString();
+                }
+                catch
+                {
+
+                }
             }
         }
 
@@ -83,6 +90,11 @@ namespace ProjetoAsp.net.Views.Consultas
             C.PacienteId = int.Parse(ddlPacientes.SelectedValue);
             C.Ativo = true;
             cc.Editar(C);
+        }
+
+        protected void btnPac_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Views/Pacientes/ListaPaciente.aspx");
         }
     }
 }
