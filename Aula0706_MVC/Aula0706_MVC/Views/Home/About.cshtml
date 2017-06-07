@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@if (true)
+{
+   
+}
+@Html.TextBox("Nome")
+@Html.TextBox("Sobrenome", "João")
+@Html.TextBox("CPF", null, new { @class ="form-control"})
+@Html.TextBox("CPF2", null, new { @class = "form-control", placeholder = "000.000.000-00" })
+
+@Html.CheckBox("Ativo" , true) Ativo
+<p>Use this area to provide additional information.</p>
