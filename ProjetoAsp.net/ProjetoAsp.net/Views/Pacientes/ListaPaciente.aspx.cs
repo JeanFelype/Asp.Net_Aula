@@ -23,6 +23,7 @@ namespace ProjetoAsp.net.Views.Pacientes
                 Paciente P = new Paciente();
                 P.Nome = txtNomeP.Text;
                 P.DataNascimento = txtDataNasc.Text;
+                P.Ativo = true;
                 PacienteControllers pc = new PacienteControllers();
                 pc.Adicionar(P);
             }
